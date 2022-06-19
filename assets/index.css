@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+@keyframes fade_in {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+     }
+}
+
+body {
+    margin: 0%;
+    background-color: #eec39a;
+    background-repeat: repeat;
+    background-image: url("./img/sand_bg.png");
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: #e07e6d;
+}
+
+* {
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    color: black;
+    background: white;
+}
+
+img {
+    display: block;
+    width: 20%;
+    height: auto;
+}
+
+.block {
+    margin: 2% 2% 2% 2%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#header {
+    animation: fade_in ease 1s;
+}
+
+#content {
+    margin-top: -1%;
+    animation: fade_in ease 1.5s;
+}
+
+#footer {
+    margin-top: -1%;
+    animation: fade_in ease 2s;
+    display: flex;
+    align-items: flex-start;
+}
+
+#inner-footer {
+    padding-left: 20px;
+}
